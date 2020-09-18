@@ -40,7 +40,7 @@ def main():
   
     for i in range(0, N+1):
       a = [0] + ([-1]*N)
-      # Don't understand
+      # -1 means unoccupied
       sol.append(a)
   
     # Valid next moves for a given pos (i, j) --> (i+x_move, j+y_move)
@@ -51,7 +51,7 @@ def main():
   
     if (knight_tour(sol, 1, 1, 1, x_move, y_move)):
       for i in range(1, N+1):
-        print(sol[i][1:])
+        print('solution steps :', sol[i][1:])
       return True
     return False
 
