@@ -34,14 +34,18 @@ class Solution:
                if lst[it -1] == 0:
                   empty +=1
                   empty_detec = 1
+         if len(lst) == 1 and lst[it] == 0:
+                 empty +=1
+                 empty_detec = 1
+
       return ( n <= empty )
 
 # lst = [1,0,0,0,1]
 # lst = [1,0,0,0,0,1]
 # lst = [1,0,0,0,1,0,0]
 # lst = [0, 0, 0]
-lst = [0, 0]
-
+# lst = [0, 0]
+lst = [0]
 n = 1
 sol = Solution()
 print sol.flowerbed(lst, n)
