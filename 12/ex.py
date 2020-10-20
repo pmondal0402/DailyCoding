@@ -72,7 +72,8 @@ class Solution:
               # TODO
               # modify_chkletter 
               # modify_chkrepeat
-              return 0
+              # print('You have a strong password')
+              return "You have a strong password"
       else:
            return mod_charlen(s)
 
