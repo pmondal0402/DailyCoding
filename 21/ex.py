@@ -1,3 +1,6 @@
+# LeetCode Submission
+# https://leetcode.com/problems/pascals-triangle/submissions/
+
 class solution:
   def pascaltriangle(self, numRows):
     result = []
