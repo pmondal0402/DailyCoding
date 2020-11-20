@@ -1,0 +1,47 @@
+ 1766  cp ../energy_integrator/DateDec20/gaussint.py .
+ 1767  cp ../energy_integrator/DateDec20/testgaussintegrator.py .
+ 1768  ls
+ 1769  lg
+ 1770  cp ../energy_integrator/DateDec20/PetrSchemeNonUniformIntSeg/crt_seg.py .
+ 1771  cp ../energy_integrator/DateDec20/PetrSchemeNonUniformIntSeg/nonuni_int.py .
+ 1772  git status
+ 1773  git add crt_seg.py 
+ 1774  git add gaussint.py 
+ 1775  git add nonuni_int.py 
+ 1776  git add testgaussintegrator.py
+ 1777  git status
+ 1778  lg
+ 1779  git commit -m "Added nonuniform grid in energy integrator"
+ 1780  lg
+ 1781  git fetch origin master 
+ 1782  lg
+ 1783  git rebase -i origin/master
+ 1784  git push origin master
+ 1785  lg
+ 1787  history> gitcommands
+
+*** Important link ***
+https://www.atlassian.com/git/tutorials/syncing/git-push
+
+** Remove a file.txt from online git repo **
+git rm --cached file.txt
+git commit -m "remving file.txt"
+git push origin master
+
+****
+---------------------------------
+To just pull remote repo to local
+git fetch --all
+git reset --hard origin/master
+---------------------------------
+fetch and merge :
+git pull origin master
+****
+---------------------------------
+To delete a file from GIT repo
+git rm file1.txt
+git commit -m "remove file1.txt"
+git push origin master 
+---------------------------------
+
+
