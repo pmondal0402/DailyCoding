@@ -53,6 +53,6 @@ class Solution:
     return mat
 
 # Ex.
-n = 9
+n = 11
 sol = Solution().generateMatrix
 sol(n)
